@@ -1,12 +1,15 @@
 <div>
     <form [formGroup]="inlogForm" (ngSubmit)="submit()">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" formControlName="usernameField">
-        <label for="pass">Password:</label>
-        <input type="password" id="pass" name="password" formControlName="passwordField">
+        <ft-formfield>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" formControlName="usernameField">
+        </ft-formfield>
 
-        <!-- <ft-formfield></ft-formfield> -->
+        <ft-formfield>
+            <label for="pass">Password:</label>
+            <input type="password" id="pass" name="password" formControlName="passwordField">
+        </ft-formfield>
 
-        <button ft-button type="primary" size="desktop" [disabled]="!inlogForm.valid">Inloggen</button>
+        <button ft-button class="btn--topiyellow" [disabled]="!inlogForm.valid">Inloggen</button>
     </form>
 </div>

@@ -1,7 +1,6 @@
 import { Component } from "@angular/core";
 import { FormControl, FormGroup, Validators } from "@angular/forms";
-import { HttpLogInService } from "./http-login.service";
-
+import { HttpLogInService } from "./service/http-login.service";
 
 @Component({
     selector: 'top-log-in',
@@ -11,12 +10,10 @@ import { HttpLogInService } from "./http-login.service";
 export class LogInComponent {
     constructor(private service: HttpLogInService) {}
 
-
     inlogForm = new FormGroup({
         usernameField: new FormControl('', [Validators.required]),
         passwordField: new FormControl('', [Validators.required]),
     });
-
 
     submit() {
         this.service.login();
