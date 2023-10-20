@@ -3,7 +3,7 @@ import { FormControl, FormGroup, Validators } from "@angular/forms";
 import { HttpLogInService } from "./service/http-login.service";
 
 @Component({
-    selector: 'top-log-in',
+    selector: 'tob-log-in',
     templateUrl: './login.component.html',
     styleUrls: ['./login.component.scss']
 })

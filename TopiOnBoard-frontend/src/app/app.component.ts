@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FtIconRegistry, iconFtUser } from '@fortytwo/ui';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'TopiOnBoard-frontend';
+
+  userIcon = iconFtUser;
+
+  constructor (registry: FtIconRegistry) {
+    registry.registerIcons([iconFtUser]);
+  }
 }
