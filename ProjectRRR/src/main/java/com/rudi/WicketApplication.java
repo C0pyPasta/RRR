@@ -1,5 +1,8 @@
 package com.rudi;
 
+import com.rudi.entities.User;
+import jakarta.persistence.EntityManagerFactory;
+import jakarta.persistence.Persistence;
 import org.apache.wicket.csp.CSPDirective;
 import org.apache.wicket.csp.CSPDirectiveSrcValue;
 import org.apache.wicket.markup.html.WebPage;
@@ -37,5 +40,6 @@ public class WicketApplication extends WebApplication
 			.add(CSPDirective.FONT_SRC, "https://fonts.gstatic.com");
 
 		// add your configuration here
+		EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("persistenceUnitName");
 	}
 }
