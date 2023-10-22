@@ -21,6 +21,7 @@ public class UserDAO {
 
     public void save(User user)
     {
+        user.setPassword(hashPassword(user.getPassword()));
         connectionManager.inTransaction(session -> {
             session.persist(user);
         });

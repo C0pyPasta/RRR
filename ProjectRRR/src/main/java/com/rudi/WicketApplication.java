@@ -1,5 +1,7 @@
 package com.rudi;
 
+import com.rudi.config.ConnectionManager;
+import com.rudi.dao.UserDAO;
 import com.rudi.entities.User;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
@@ -40,6 +42,8 @@ public class WicketApplication extends WebApplication
 			.add(CSPDirective.FONT_SRC, "https://fonts.gstatic.com");
 
 		// add your configuration here
-		EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("persistenceUnitName");
+		User user = new User("Roy Rooseboom", "royr", "password");
+
+		new UserDAO().save(user);
 	}
 }
