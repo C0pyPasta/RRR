@@ -31,19 +31,15 @@ public class WicketApplication extends WebApplication
 	 * @see org.apache.wicket.Application#init()
 	 */
 	@Override
-	public void init()
-	{
+	public void init() {
 		super.init();
 
 		// needed for the styling used by the quickstart
 		getCspSettings().blocking()
-			.add(CSPDirective.STYLE_SRC, CSPDirectiveSrcValue.SELF)
-			.add(CSPDirective.STYLE_SRC, "https://fonts.googleapis.com/css")
-			.add(CSPDirective.FONT_SRC, "https://fonts.gstatic.com");
+				.add(CSPDirective.STYLE_SRC, CSPDirectiveSrcValue.SELF)
+				.add(CSPDirective.STYLE_SRC, "https://fonts.googleapis.com/css")
+				.add(CSPDirective.FONT_SRC, "https://fonts.gstatic.com");
 
 		// add your configuration here
-		User user = new User("Roy Rooseboom", "royr", "password");
-
-		new UserDAO().save(user);
 	}
 }

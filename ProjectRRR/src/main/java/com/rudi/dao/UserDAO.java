@@ -11,28 +11,23 @@ import org.mindrot.jbcrypt.BCrypt;
 
 import java.util.List;
 
-public class UserDAO {
+public class UserDAO extends AbstractDAO {
     private ConnectionManager connectionManager;
 
     public UserDAO()
     {
-        this.connectionManager = new ConnectionManager();
+        super();
     }
 
     public void save(User user)
     {
         user.setPassword(hashPassword(user.getPassword()));
-        connectionManager.inTransaction(session -> {
-            session.persist(user);
-        });
+        super.save(user);
     }
 
     public void delete(User user)
     {
-        connectionManager.inTransaction(session -> {
-            session.remove(user);
-            session.getTransaction().commit();
-        });
+        super.delete(user);
     }
 
     public User getByUsername(String username)
@@ -42,20 +37,21 @@ public class UserDAO {
         CriteriaBuilder builder = entityManager.getCriteriaBuilder();
         CriteriaQuery<User> cq = builder.createQuery(User.class);
         Root<User> root = cq.from(User.class);
-        cq.select(root).where(builder.like(root.get("username"), username));
+        cq.select(root).where(builder.like(root.get("username"), username.toLowerCase()));
 
         Query query = entityManager.createQuery(cq);
-        List<User> results = query.getResultList();
+        User result = (User) query.getSingleResult();
         entityManager.close();
-        if(!results.isEmpty())
-        {
-            return results.get(0);
-        }
-        return null;
+        return result;
     }
 
     public String hashPassword(String unhashedPassword)
     {
         return BCrypt.hashpw(unhashedPassword, BCrypt.gensalt());
+    }
+
+    public boolean checkPassword(User user, String input)
+    {
+        return BCrypt.checkpw(input, user.getPassword());
     }
 }

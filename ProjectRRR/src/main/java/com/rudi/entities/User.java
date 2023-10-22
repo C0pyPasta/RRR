@@ -4,11 +4,7 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name="Users")
-public class User {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
+public class User extends AbstractEntity {
     @Column(nullable = false)
     private String name;
 
@@ -20,22 +16,14 @@ public class User {
 
     public User()
     {
-
+        super();
     }
 
     public User(String name, String username, String password)
     {
         this.name = name;
-        this.username = username;
+        this.username = username.toLowerCase();
         this.password = password;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public String getName() {

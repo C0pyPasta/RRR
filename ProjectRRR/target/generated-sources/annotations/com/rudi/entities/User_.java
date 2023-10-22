@@ -5,7 +5,7 @@ import jakarta.persistence.metamodel.SingularAttribute;
 import jakarta.persistence.metamodel.StaticMetamodel;
 
 @StaticMetamodel(User.class)
-public abstract class User_ {
+public abstract class User_ extends com.rudi.entities.AbstractEntity_ {
 
 	
 	/**
@@ -19,11 +19,6 @@ public abstract class User_ {
 	public static volatile SingularAttribute<User, String> name;
 	
 	/**
-	 * @see com.rudi.entities.User#id
-	 **/
-	public static volatile SingularAttribute<User, Long> id;
-	
-	/**
 	 * @see com.rudi.entities.User
 	 **/
 	public static volatile EntityType<User> class_;
@@ -35,7 +30,6 @@ public abstract class User_ {
 
 	public static final String PASSWORD = "password";
 	public static final String NAME = "name";
-	public static final String ID = "id";
 	public static final String USERNAME = "username";
 
 }
