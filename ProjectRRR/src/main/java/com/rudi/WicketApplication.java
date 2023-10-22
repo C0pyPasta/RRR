@@ -1,10 +1,7 @@
 package com.rudi;
 
-import com.rudi.config.ConnectionManager;
 import com.rudi.dao.UserDAO;
 import com.rudi.entities.User;
-import jakarta.persistence.EntityManagerFactory;
-import jakarta.persistence.Persistence;
 import org.apache.wicket.csp.CSPDirective;
 import org.apache.wicket.csp.CSPDirectiveSrcValue;
 import org.apache.wicket.markup.html.WebPage;
@@ -41,5 +38,12 @@ public class WicketApplication extends WebApplication
 				.add(CSPDirective.FONT_SRC, "https://fonts.gstatic.com");
 
 		// add your configuration here
+		UserDAO userDAO = new UserDAO();
+		User user1 = new User("Rutger", "Rutger", "password");
+		User user2 = new User("Roy", "Roy", "password");
+		User user3 = new User("Roger", "Roger", "password");
+		userDAO.save(user1);
+		userDAO.save(user2);
+		userDAO.save(user3);
 	}
 }

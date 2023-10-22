@@ -1,18 +1,16 @@
 package com.rudi.dao;
 
-import com.rudi.config.ConnectionManager;
 import com.rudi.entities.User;
 import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityManagerFactory;
+import jakarta.persistence.Persistence;
 import jakarta.persistence.Query;
 import jakarta.persistence.criteria.CriteriaBuilder;
 import jakarta.persistence.criteria.CriteriaQuery;
 import jakarta.persistence.criteria.Root;
 import org.mindrot.jbcrypt.BCrypt;
 
-import java.util.List;
-
 public class UserDAO extends AbstractDAO {
-    private ConnectionManager connectionManager;
 
     public UserDAO()
     {
@@ -25,14 +23,10 @@ public class UserDAO extends AbstractDAO {
         super.save(user);
     }
 
-    public void delete(User user)
-    {
-        super.delete(user);
-    }
-
     public User getByUsername(String username)
     {
-        EntityManager entityManager = connectionManager.getEntityManager();
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("persistenceUnitName");
+        EntityManager entityManager = emf.createEntityManager();
         entityManager.getTransaction().begin();
         CriteriaBuilder builder = entityManager.getCriteriaBuilder();
         CriteriaQuery<User> cq = builder.createQuery(User.class);
