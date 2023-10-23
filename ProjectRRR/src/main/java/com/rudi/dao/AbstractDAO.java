@@ -2,7 +2,6 @@ package com.rudi.dao;
 
 import com.rudi.entities.AbstractEntity;
 import jakarta.persistence.*;
-
 import java.util.List;
 import java.util.function.Consumer;
 
