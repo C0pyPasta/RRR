@@ -1,14 +1,15 @@
 package com.rudi.dao;
 
 import com.rudi.entities.AbstractEntity;
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.EntityManagerFactory;
-import jakarta.persistence.EntityTransaction;
-import jakarta.persistence.Persistence;
+import jakarta.persistence.*;
 
+import java.util.List;
 import java.util.function.Consumer;
 
 public abstract class AbstractDAO {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long Id;
 
     public AbstractDAO()
     {
@@ -17,14 +18,24 @@ public abstract class AbstractDAO {
 
     public <T extends AbstractEntity> void save(T entity)
     {
-        inTransaction(session -> {
+        performTransaction(session -> {
             session.persist(entity);
+        });
+    }
+
+    public <T extends AbstractEntity> void saveAll(List<T> entityList)
+    {
+        performTransaction(session -> {
+            for(T entity : entityList)
+            {
+                session.persist(entity);
+            }
         });
     }
 
     public <T extends AbstractEntity> void delete(T entity)
     {
-        inTransaction(session -> {
+        performTransaction(session -> {
             session.remove(session.merge(entity));
         });
     }
@@ -35,7 +46,7 @@ public abstract class AbstractDAO {
 //            session.find()
 //        });
 //    }
-    public void inTransaction(Consumer<EntityManager> work) {
+    public void performTransaction(Consumer<EntityManager> work) {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("persistenceUnitName");
         EntityManager entityManager = emf.createEntityManager();
         EntityTransaction transaction = entityManager.getTransaction();
@@ -53,5 +64,15 @@ public abstract class AbstractDAO {
         finally {
             entityManager.close();
         }
+    }
+
+    public Long getId()
+    {
+        return this.Id;
+    }
+
+    public void setId(Long Id)
+    {
+        this.Id = Id;
     }
 }

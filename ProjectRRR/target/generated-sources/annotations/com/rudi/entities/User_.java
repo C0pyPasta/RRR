@@ -9,12 +9,12 @@ public abstract class User_ extends com.rudi.entities.AbstractEntity_ {
 
 	
 	/**
-	 * @see com.rudi.entities.User#password
+	 * @see com.rudi.entities.User#getPassword
 	 **/
 	public static volatile SingularAttribute<User, String> password;
 	
 	/**
-	 * @see com.rudi.entities.User#name
+	 * @see com.rudi.entities.User#getName
 	 **/
 	public static volatile SingularAttribute<User, String> name;
 	
@@ -24,7 +24,7 @@ public abstract class User_ extends com.rudi.entities.AbstractEntity_ {
 	public static volatile EntityType<User> class_;
 	
 	/**
-	 * @see com.rudi.entities.User#username
+	 * @see com.rudi.entities.User#getUsername
 	 **/
 	public static volatile SingularAttribute<User, String> username;
 

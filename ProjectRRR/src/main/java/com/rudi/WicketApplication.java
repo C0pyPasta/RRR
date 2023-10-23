@@ -7,6 +7,8 @@ import org.apache.wicket.csp.CSPDirectiveSrcValue;
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.protocol.http.WebApplication;
 
+import java.util.List;
+
 /**
  * Application object for your web application.
  * If you want to run this application without deploying, run the Start class.
@@ -42,8 +44,6 @@ public class WicketApplication extends WebApplication
 		User user1 = new User("Rutger", "Rutger", "password");
 		User user2 = new User("Roy", "Roy", "password");
 		User user3 = new User("Roger", "Roger", "password");
-		userDAO.save(user1);
-		userDAO.save(user2);
-		userDAO.save(user3);
+		userDAO.saveAllUsers(List.of(user1, user2, user3));
 	}
 }
