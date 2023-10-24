@@ -20,9 +20,4 @@ public class AbstractEntity {
     {
         return this.Id;
     }
-
-    public void setId(Long Id)
-    {
-        this.Id = Id;
-    }
 }

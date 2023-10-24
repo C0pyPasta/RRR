@@ -20,6 +20,8 @@ import java.lang.management.ManagementFactory;
 
 import javax.management.MBeanServer;
 
+import com.rudi.rest.RestEasyServices;
+import org.apache.wicket.protocol.http.WicketFilter;
 import org.apache.wicket.protocol.ws.javax.WicketServerEndpointConfig;
 import org.eclipse.jetty.jmx.MBeanContainer;
 import org.eclipse.jetty.server.HttpConfiguration;
@@ -28,11 +30,13 @@ import org.eclipse.jetty.server.SecureRequestCustomizer;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.server.ServerConnector;
 import org.eclipse.jetty.server.SslConnectionFactory;
+import org.eclipse.jetty.servlet.ServletHolder;
 import org.eclipse.jetty.util.resource.Resource;
 import org.eclipse.jetty.util.ssl.SslContextFactory;
 import org.eclipse.jetty.webapp.WebAppContext;
 import org.eclipse.jetty.websocket.jsr356.server.ServerContainer;
 import org.eclipse.jetty.websocket.jsr356.server.deploy.WebSocketServerContainerInitializer;
+import org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher;
 
 /**
  * Separate startup class for people that want to run the examples directly. Use parameter
@@ -92,20 +96,24 @@ public class Start
 			System.out.println();
 		}
 
-		WebAppContext bb = new WebAppContext();
-		bb.setServer(server);
-		bb.setContextPath("/");
-		bb.setWar("src/main/webapp");
+		WebAppContext context = new WebAppContext();
+
+		context.setServer(server);
+		context.setDescriptor("src/main/webapp/WEB-INF/web.xml");
+		context.setResourceBase("src/main/java/com/rudi/rest/");
+		context.setContextPath("/");
+		ServletHolder servlet = context.addServlet(HttpServletDispatcher.class, "/");
+		servlet.setInitParameter("javax.ws.rs.Application", RestEasyServices.class.getCanonicalName());
 
 		// bb.getSessionHandler().setSessionCache(sessionCache);
 
-		ServerContainer serverContainer = WebSocketServerContainerInitializer.initialize(bb);
+		ServerContainer serverContainer = WebSocketServerContainerInitializer.initialize(context);
 		serverContainer.addEndpoint(new WicketServerEndpointConfig());
 		// uncomment next line if you want to test with JSESSIONID encoded in the urls
 		// ((AbstractSessionManager)
 		// bb.getSessionHandler().getSessionManager()).setUsingCookies(false);
 
-		server.setHandler(bb);
+		server.setHandler(context);
 
 		MBeanServer mBeanServer = ManagementFactory.getPlatformMBeanServer();
 		MBeanContainer mBeanContainer = new MBeanContainer(mBeanServer);

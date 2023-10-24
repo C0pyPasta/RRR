@@ -16,7 +16,7 @@ public class UserService {
     @GET
     @Path("/test")
     @Produces(MediaType.TEXT_PLAIN)
-    public String hello()
+    public String test()
     {
         return "Test successful";
     }
