@@ -22,8 +22,11 @@ public class UserDAO extends AbstractDAO {
 
     public void saveUser(User user)
     {
-        user.setPassword(hashPassword(user.getPassword()));
-        save(user);
+        if(getByUsername(user.getUsername()) == null)
+        {
+            user.setPassword(hashPassword(user.getPassword()));
+            save(user);
+        }
     }
 
     public void saveAllUsers(List<User> users)
@@ -31,8 +34,11 @@ public class UserDAO extends AbstractDAO {
         List<User> usersWithHashedPasswords = new ArrayList<>();
         for(User user : users)
         {
-            user.setPassword(hashPassword(user.getPassword()));
-            usersWithHashedPasswords.add(user);
+            if(getByUsername(user.getUsername()) == null)
+            {
+                user.setPassword(hashPassword(user.getPassword()));
+                usersWithHashedPasswords.add(user);
+            }
         }
         saveAll(usersWithHashedPasswords);
     }
@@ -48,9 +54,9 @@ public class UserDAO extends AbstractDAO {
         cq.select(root).where(builder.like(root.get("username"), username.toLowerCase()));
 
         Query query = entityManager.createQuery(cq);
-        User result = (User) query.getSingleResult();
+        List<User> result = query.getResultList();
         entityManager.close();
-        return result;
+        return result.isEmpty() ? null : result.get(0);
     }
 
     public String hashPassword(String unhashedPassword)
