@@ -20,7 +20,7 @@ import java.lang.management.ManagementFactory;
 
 import javax.management.MBeanServer;
 
-import com.rudi.rest.RestEasyServices;
+import com.rudi.backend.rest.RestEasyServices;
 import org.apache.wicket.protocol.http.WicketFilter;
 import org.apache.wicket.protocol.ws.javax.WicketServerEndpointConfig;
 import org.eclipse.jetty.jmx.MBeanContainer;
@@ -96,24 +96,24 @@ public class Start
 			System.out.println();
 		}
 
-		WebAppContext context = new WebAppContext();
-
-		context.setServer(server);
-		context.setDescriptor("src/main/webapp/WEB-INF/web.xml");
-		context.setResourceBase("src/main/java/com/rudi/rest/");
-		context.setContextPath("/");
-		ServletHolder servlet = context.addServlet(HttpServletDispatcher.class, "/");
-		servlet.setInitParameter("javax.ws.rs.Application", RestEasyServices.class.getCanonicalName());
+		WebAppContext bb = new WebAppContext();
+		bb.setServer(server);
+		bb.setContextPath("/");
+		bb.setWar("src/main/webapp");
+//		bb.setResourceBase("src/main/java/com/rudi/rest/");
+//		bb.setDescriptor("src/main/webapp/WEB-INF/web.xml");
+//		ServletHolder servlet = bb.addServlet(HttpServletDispatcher.class, "/");
+//		servlet.setInitParameter("javax.ws.rs.Application", RestEasyServices.class.getCanonicalName());
 
 		// bb.getSessionHandler().setSessionCache(sessionCache);
 
-		ServerContainer serverContainer = WebSocketServerContainerInitializer.initialize(context);
+		ServerContainer serverContainer = WebSocketServerContainerInitializer.initialize(bb);
 		serverContainer.addEndpoint(new WicketServerEndpointConfig());
 		// uncomment next line if you want to test with JSESSIONID encoded in the urls
 		// ((AbstractSessionManager)
 		// bb.getSessionHandler().getSessionManager()).setUsingCookies(false);
 
-		server.setHandler(context);
+		server.setHandler(bb);
 
 		MBeanServer mBeanServer = ManagementFactory.getPlatformMBeanServer();
 		MBeanContainer mBeanContainer = new MBeanContainer(mBeanServer);
