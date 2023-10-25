@@ -10,15 +10,11 @@ import jakarta.persistence.criteria.CriteriaQuery;
 import jakarta.persistence.criteria.Root;
 import org.mindrot.jbcrypt.BCrypt;
 
+import javax.ejb.Stateless;
 import java.util.ArrayList;
 import java.util.List;
 
 public class UserDAO extends AbstractDAO {
-
-    public UserDAO()
-    {
-        super();
-    }
 
     public void saveUser(User user)
     {
@@ -68,6 +64,5 @@ public class UserDAO extends AbstractDAO {
     {
         return BCrypt.checkpw(input, user.getPassword());
     }
-
 
 }

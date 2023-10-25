@@ -6,14 +6,6 @@ import java.util.List;
 import java.util.function.Consumer;
 
 public abstract class AbstractDAO {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long Id;
-
-    public AbstractDAO()
-    {
-
-    }
 
     public <T extends AbstractEntity> void save(T entity)
     {
@@ -45,6 +37,7 @@ public abstract class AbstractDAO {
 //            session.find()
 //        });
 //    }
+
     public void performTransaction(Consumer<EntityManager> work) {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("persistenceUnitName");
         EntityManager entityManager = emf.createEntityManager();
@@ -63,15 +56,5 @@ public abstract class AbstractDAO {
         finally {
             entityManager.close();
         }
-    }
-
-    public Long getId()
-    {
-        return this.Id;
-    }
-
-    public void setId(Long Id)
-    {
-        this.Id = Id;
     }
 }

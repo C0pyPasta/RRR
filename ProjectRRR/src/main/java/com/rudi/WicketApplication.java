@@ -41,9 +41,10 @@ public class WicketApplication extends WebApplication
 
 		// add your configuration here
 		UserDAO userDAO = new UserDAO();
-		User user1 = new User("Rutger", "Rutger", "password");
-		User user2 = new User("Roy", "Roy", "password");
-		User user3 = new User("Roger", "Roger", "password");
-		userDAO.saveAllUsers(List.of(user1, user2, user3));
+		userDAO.saveAllUsers(List.of(
+			new User("Rutger", "Rutger", "password1"),
+			new User("Roy", "Roy", "password2"),
+			new User("Roger", "Roger", "password3")
+		));
 	}
 }

@@ -10,12 +10,14 @@ public class RestEasyServices extends Application {
 
     private Set<Object> singletons = new HashSet<Object>();
 
-    public RestEasyServices() {
+    public RestEasyServices()
+    {
         singletons.add(new UserService());
     }
 
     @Override
-    public Set<Object> getSingletons() {
+    public Set<Object> getSingletons()
+    {
         return singletons;
     }
 }
