@@ -10,7 +10,6 @@ import jakarta.persistence.criteria.CriteriaQuery;
 import jakarta.persistence.criteria.Root;
 import org.mindrot.jbcrypt.BCrypt;
 
-import javax.ejb.Stateless;
 import java.util.ArrayList;
 import java.util.List;
 
