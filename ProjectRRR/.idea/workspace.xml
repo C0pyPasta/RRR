@@ -21,9 +21,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
-  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -40,7 +37,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/roger/work/RRR/WicketFrontend/pom.xml&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/roger/work/RRR/ProjectRRR/src/main/resources/META-INF&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -96,7 +93,6 @@
       <workItem from="1698355702348" duration="2069000" />
       <workItem from="1698390107436" duration="3825000" />
       <workItem from="1698403689231" duration="115000" />
-      <workItem from="1698404990627" duration="226000" />
     </task>
     <servers />
   </component>
