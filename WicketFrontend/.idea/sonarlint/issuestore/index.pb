@@ -1,8 +1,6 @@
 
 X
 (src/test/java/com/rudi/TestHomePage.java,4/5/45ad13a473e9eaa64c46ab7f26ae9a3fd402a25d
-O
-src/main/webapp/WEB-INF/web.xml,2/e/2e22b6edd746fa3dc40ad7276c87c8d87d72a392
 T
 $src/main/java/com/rudi/HomePage.html,e/8/e84314632a7b93348e2b5142a34f09ba3d7c551a
 ]

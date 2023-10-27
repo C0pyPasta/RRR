@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="644aaeed-e28f-4acc-a3cb-66823f1f97c2" name="Changes" comment="" />
+    <list default="true" id="644aaeed-e28f-4acc-a3cb-66823f1f97c2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/e/2e22b6edd746fa3dc40ad7276c87c8d87d72a392" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/e/2e22b6edd746fa3dc40ad7276c87c8d87d72a392" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/rudi/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/rudi/Start.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/rudi/Start.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/rudi/Start.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,7 +69,7 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="ProjectRRR" type="Application" factoryName="Application">
+    <configuration name="Wicket" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.rudi.Start" />
       <module name="testingWicket" />
       <method v="2">

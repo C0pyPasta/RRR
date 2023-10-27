@@ -94,7 +94,7 @@ public class Start
 
 		WebAppContext bb = new WebAppContext();
 		bb.setServer(server);
-		bb.setContextPath("/");
+		bb.setContextPath("/wicket/");
 		bb.setWar("src/main/webapp");
 
 		// bb.getSessionHandler().setSessionCache(sessionCache);
