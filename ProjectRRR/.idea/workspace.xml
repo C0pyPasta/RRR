@@ -5,60 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="644aaeed-e28f-4acc-a3cb-66823f1f97c2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../TopiOnBoard-frontend/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TopiOnBoard-frontend/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TopiOnBoard-frontend/.vscode/extensions.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TopiOnBoard-frontend/.vscode/launch.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TopiOnBoard-frontend/.vscode/tasks.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TopiOnBoard-frontend/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TopiOnBoard-frontend/angular.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TopiOnBoard-frontend/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TopiOnBoard-frontend/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TopiOnBoard-frontend/src/app/app-routing.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TopiOnBoard-frontend/src/app/app.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TopiOnBoard-frontend/src/app/app.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TopiOnBoard-frontend/src/app/app.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TopiOnBoard-frontend/src/app/app.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TopiOnBoard-frontend/src/app/app.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TopiOnBoard-frontend/src/app/pages/home/homepage.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TopiOnBoard-frontend/src/app/pages/home/homepage.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TopiOnBoard-frontend/src/app/pages/home/homepage.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TopiOnBoard-frontend/src/app/pages/home/homepage.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TopiOnBoard-frontend/src/app/pages/login/login.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TopiOnBoard-frontend/src/app/pages/login/login.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TopiOnBoard-frontend/src/app/pages/login/login.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TopiOnBoard-frontend/src/app/pages/login/login.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TopiOnBoard-frontend/src/app/pages/login/service/http-login.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TopiOnBoard-frontend/src/app/pages/profile/profile.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TopiOnBoard-frontend/src/app/pages/profile/profile.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TopiOnBoard-frontend/src/app/pages/profile/profile.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TopiOnBoard-frontend/src/assets/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TopiOnBoard-frontend/src/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TopiOnBoard-frontend/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TopiOnBoard-frontend/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TopiOnBoard-frontend/src/shared/styles/_all_colors.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TopiOnBoard-frontend/src/shared/styles/components/_button.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TopiOnBoard-frontend/src/shared/styles/fortytwo/_fortytwo.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TopiOnBoard-frontend/src/styles.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TopiOnBoard-frontend/tsconfig.app.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TopiOnBoard-frontend/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TopiOnBoard-frontend/tsconfig.spec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TopiOnBoard-frontend/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/2/1265eb6156774ed270f1b86c41439d1b3f4c8e8d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/9/69d2135a9adb66713d9f70e209fe8219d4fb8135" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/7/97ba131589b7b419631730041f98b7e92cad2fde" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/5/c5557dc0aaa155caa159de1a94c594d782106cbd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/2/e2b135d7c2cdbe0dba3b63b8598fb350fc53decf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/2/1265eb6156774ed270f1b86c41439d1b3f4c8e8d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/9/69d2135a9adb66713d9f70e209fe8219d4fb8135" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/7/97ba131589b7b419631730041f98b7e92cad2fde" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/5/c5557dc0aaa155caa159de1a94c594d782106cbd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/2/e2b135d7c2cdbe0dba3b63b8598fb350fc53decf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testingWicket.iml" beforeDir="false" afterPath="$PROJECT_DIR$/testingWicket.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rudi/entities/AbstractEntity_.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rudi/entities/User_.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
