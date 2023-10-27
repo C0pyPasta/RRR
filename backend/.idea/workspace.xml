@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97f1bc27-08e6-41df-902e-d0ed3a16cf73" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../WicketFrontend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WicketFrontend/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="764ca494-d59c-478e-81a0-e3e2f74dc509" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../WicketFrontend/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WicketFrontend/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,44 +19,28 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 3
 }</component>
-  <component name="ProjectId" id="2XLQYyoUytDl4gmoYWJqGW6N2Ib" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="1" id="Add" />
-  </component>
+  <component name="ProjectId" id="2XLnJBD7wI6IRI6QN4PJWvnHm41" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_directory_selection&quot;: &quot;/home/roger/work/RRR/backend/src/test/java&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/roger/work/RRR/backend/src/main/java&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/roger/work/RRR/backend/pom.xml",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/java" />
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/rudi" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main" />
-    </key>
-  </component>
+}]]></component>
   <component name="RunManager">
-    <configuration name="Run TopiOnboard" type="Application" factoryName="Application">
+    <configuration name="Backend" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.rudi.Main" />
       <module name="backend" />
       <method v="2">
@@ -64,16 +51,13 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="97f1bc27-08e6-41df-902e-d0ed3a16cf73" name="Changes" comment="" />
-      <created>1698405931336</created>
+      <changelist id="764ca494-d59c-478e-81a0-e3e2f74dc509" name="Changes" comment="" />
+      <created>1698417153743</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1698405931336</updated>
-      <workItem from="1698405932310" duration="850000" />
-      <workItem from="1698408735262" duration="437000" />
-      <workItem from="1698411475740" duration="4363000" />
-      <workItem from="1698416361740" duration="13000" />
-      <workItem from="1698416403400" duration="126000" />
+      <updated>1698417153743</updated>
+      <workItem from="1698417154664" duration="13000" />
+      <workItem from="1698417176445" duration="732000" />
     </task>
     <servers />
   </component>

@@ -56,12 +56,6 @@ public class Start
 		http_config.setSecurePort(8443);
 		http_config.setOutputBufferSize(32768);
 
-		ServerConnector http = new ServerConnector(server, new HttpConnectionFactory(http_config));
-		http.setPort(8080);
-		http.setIdleTimeout(1000 * 60 * 60);
-
-		server.addConnector(http);
-
 		Resource keystore = Resource.newClassPathResource("/keystore");
 		if (keystore != null && keystore.exists())
 		{
