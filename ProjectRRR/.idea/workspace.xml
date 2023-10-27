@@ -5,9 +5,54 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="644aaeed-e28f-4acc-a3cb-66823f1f97c2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/5/45ad13a473e9eaa64c46ab7f26ae9a3fd402a25d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/4/647ed5f0b9ed82b4b4488f796f38917da0c2b4ae" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/5/45ad13a473e9eaa64c46ab7f26ae9a3fd402a25d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/4/647ed5f0b9ed82b4b4488f796f38917da0c2b4ae" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rudi/backend/WicketApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rudi/WicketApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rudi/backend/dao/AbstractDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rudi/backend/dao/UserDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rudi/backend/entities/AbstractEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rudi/backend/entities/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rudi/backend/rest/RestEasyServices.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rudi/backend/rest/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rudi/wicket/pages/HomePage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rudi/wicket/pages/HomePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rudi/wicket/pages/LoginPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rudi/wicket/pages/LoginPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rudi/wicket/pages/NewUserPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rudi/wicket/pages/NewUserPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/rudi/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/rudi/Start.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/rudi/TestHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/rudi/TestHomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rudi/backend/WicketApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rudi/backend/dao/AbstractDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rudi/backend/dao/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rudi/backend/dao/UserDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rudi/backend/entities/AbstractEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rudi/backend/entities/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rudi/backend/rest/RestEasyServices.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rudi/backend/rest/UserService.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/rudi/entities/AbstractEntity_.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/rudi/entities/User_.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rudi/wicket/pages/HomePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rudi/wicket/pages/HomePage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rudi/wicket/pages/LoginPage$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rudi/wicket/pages/LoginPage$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rudi/wicket/pages/LoginPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rudi/wicket/pages/LoginPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rudi/wicket/pages/NewUserPage$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rudi/wicket/pages/NewUserPage$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rudi/wicket/pages/NewUserPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rudi/wicket/pages/NewUserPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/rudi/backend/entities/AbstractEntity_.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/rudi/backend/entities/User_.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/rudi/Start.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/rudi/Start.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/rudi/TestHomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/rudi/TestHomePage.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +62,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -57,6 +102,9 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/com/rudi/backend" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.rudi" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="ProjectRRR" type="Application" factoryName="Application">
@@ -93,6 +141,7 @@
       <workItem from="1698331373341" duration="1016000" />
       <workItem from="1698355702348" duration="2069000" />
       <workItem from="1698390107436" duration="3825000" />
+      <workItem from="1698403689231" duration="115000" />
     </task>
     <servers />
   </component>

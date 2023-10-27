@@ -20,8 +20,6 @@ import java.lang.management.ManagementFactory;
 
 import javax.management.MBeanServer;
 
-import com.rudi.backend.rest.RestEasyServices;
-import org.apache.wicket.protocol.http.WicketFilter;
 import org.apache.wicket.protocol.ws.javax.WicketServerEndpointConfig;
 import org.eclipse.jetty.jmx.MBeanContainer;
 import org.eclipse.jetty.server.HttpConfiguration;
@@ -30,13 +28,11 @@ import org.eclipse.jetty.server.SecureRequestCustomizer;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.server.ServerConnector;
 import org.eclipse.jetty.server.SslConnectionFactory;
-import org.eclipse.jetty.servlet.ServletHolder;
 import org.eclipse.jetty.util.resource.Resource;
 import org.eclipse.jetty.util.ssl.SslContextFactory;
 import org.eclipse.jetty.webapp.WebAppContext;
 import org.eclipse.jetty.websocket.jsr356.server.ServerContainer;
 import org.eclipse.jetty.websocket.jsr356.server.deploy.WebSocketServerContainerInitializer;
-import org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher;
 
 /**
  * Separate startup class for people that want to run the examples directly. Use parameter

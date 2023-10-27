@@ -1,14 +1,10 @@
-package com.rudi.backend;
+package com.rudi;
 
-import com.rudi.backend.dao.UserDAO;
-import com.rudi.backend.entities.User;
-import com.rudi.wicket.pages.LoginPage;
 import org.apache.wicket.csp.CSPDirective;
 import org.apache.wicket.csp.CSPDirectiveSrcValue;
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.protocol.http.WebApplication;
-
-import java.util.List;
+import org.apache.wicket.util.tester.DummyHomePage;
 
 /**
  * Application object for your web application.
@@ -24,7 +20,7 @@ public class WicketApplication extends WebApplication
 	@Override
 	public Class<? extends WebPage> getHomePage()
 	{
-		return LoginPage.class;
+		return HomePage.class;
 	}
 
 	/**
@@ -41,11 +37,5 @@ public class WicketApplication extends WebApplication
 				.add(CSPDirective.FONT_SRC, "https://fonts.gstatic.com");
 
 		// add your configuration here
-		UserDAO userDAO = new UserDAO();
-		userDAO.saveAllUsers(List.of(
-			new User("Rutger", "Rutger", "password1"),
-			new User("Roy", "Roy", "password2"),
-			new User("Roger", "Roger", "password3")
-		));
 	}
 }
