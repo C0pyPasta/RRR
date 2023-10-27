@@ -11,6 +11,6 @@ export class HttpLogInService {
     login(form: {[key: string] : string|null|undefined}) : any {
         return this.http.get(`${this.CONFIG.backend}/users/test`, {
             observe: 'response'
-        })
+        });
     }
 }
