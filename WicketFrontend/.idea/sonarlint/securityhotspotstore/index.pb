@@ -1,10 +1,6 @@
 
-7
-pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
 O
 src/main/webapp/WEB-INF/web.xml,2/e/2e22b6edd746fa3dc40ad7276c87c8d87d72a392
-Q
-!src/test/java/com/rudi/Start.java,e/2/e2ca003d17813968a55c2686ca125fe7fdb88cc7
 T
 $src/main/java/com/rudi/HomePage.java,c/e/ce2d979007cf76903edb1081b51392b243e274d4
 T
