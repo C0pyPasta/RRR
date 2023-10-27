@@ -1,7 +1,54 @@
-@import '/src/shared/styles/all_colors' ;
+@import '/src/shared/styles/tob-styles/all_colors' ;
+@import '/src/shared/styles/tob-styles/mixins.scss';
+
+h1 {
+    position: relative;
+    left: 4rem;
+    top: 1rem;
+    font-size: 5rem;
+    font-family:'Times New Roman', Times, serif;
+    color: $topicus-yellow;
+    
+}
+
+img {
+    // width: 20rem;
+    position: absolute;
+    top: 5rem;
+    right: 16rem;
+    z-index: -1;
+    filter: blur(3px);
+}
+
+form {
+    margin-top: 1rem;
+}
+
+.center-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    @include form-labels
+}
+
+form input {
+    width: 20rem;
+}
 
 .btn {
-    &--topiyellow {
-        background-color: $topicus-yellow;
-    }
+    margin-top: .5rem;
+
+    @include topicus-button;
+}
+
+.new-user-button {
+    position: relative;
+    left: -5.7rem;
+}
+
+.btn:active, .new-user-button:active {
+    @include button-click;
 }
