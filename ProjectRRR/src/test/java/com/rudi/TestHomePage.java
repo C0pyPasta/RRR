@@ -1,7 +1,6 @@
 package com.rudi;
 
-import com.rudi.backend.WicketApplication;
-import com.rudi.wicket.pages.LoginPage;
+import org.apache.wicket.util.tester.DummyHomePage;
 import org.apache.wicket.util.tester.WicketTester;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -23,9 +22,9 @@ public class TestHomePage
 	public void homepageRendersSuccessfully()
 	{
 		//start and render the test page
-		tester.startPage(LoginPage.class);
+		tester.startPage(HomePage.class);
 
 		//assert rendered page class
-		tester.assertRenderedPage(LoginPage.class);
+		tester.assertRenderedPage(HomePage.class);
 	}
 }
