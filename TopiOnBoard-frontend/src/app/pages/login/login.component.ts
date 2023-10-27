@@ -16,6 +16,9 @@ export class LogInComponent {
     });
 
     submit() {
-        this.service.login();
+        this.service.login({
+            username: this.inlogForm.value.usernameField,
+            password: this.inlogForm.value.passwordField
+        }).subscribe();
     }
 }

@@ -1,14 +1,15 @@
-import { Injectable } from "@angular/core";
+import { Inject, Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http"
+import { APP_CONFIG, AppConfiguration } from "src/app/config/app.configuration";
 
 @Injectable({
     providedIn: 'root'
 })
 export class HttpLogInService {
-    constructor (private http: HttpClient) {}
+    constructor (private http: HttpClient, @Inject(APP_CONFIG) private CONFIG: AppConfiguration) {}
 
-    login() : any {
-        return this.http.get('http.localhost:4200/hier moet een algemeen URL komen', {
+    login(form: {[key: string] : string|null|undefined}) : any {
+        return this.http.get(`${this.CONFIG.backend}/users/test`, {
             observe: 'response'
         })
     }

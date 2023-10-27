@@ -100,10 +100,10 @@ public class Start
 		bb.setServer(server);
 		bb.setContextPath("/");
 		bb.setWar("src/main/webapp");
-//		bb.setResourceBase("src/main/java/com/rudi/rest/");
-//		bb.setDescriptor("src/main/webapp/WEB-INF/web.xml");
-//		ServletHolder servlet = bb.addServlet(HttpServletDispatcher.class, "/");
-//		servlet.setInitParameter("javax.ws.rs.Application", RestEasyServices.class.getCanonicalName());
+		bb.setResourceBase("src/main/java/com/rudi/rest/");
+		bb.setDescriptor("src/main/webapp/WEB-INF/web.xml");
+		ServletHolder servlet = bb.addServlet(HttpServletDispatcher.class, "/");
+		servlet.setInitParameter("javax.ws.rs.Application", RestEasyServices.class.getCanonicalName());
 
 		// bb.getSessionHandler().setSessionCache(sessionCache);
 
