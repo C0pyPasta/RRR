@@ -1,0 +1,7 @@
+@import '/src/shared/styles/all_colors' ;
+
+.btn {
+    &--topiyellow {
+        background-color: $topicus-yellow;
+    }
+}
