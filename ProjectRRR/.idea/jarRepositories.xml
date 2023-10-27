@@ -2,6 +2,14 @@
 <project version="4">
   <component name="RemoteRepositoriesConfiguration">
     <remote-repository>
+      <option name="id" value="snapshots" />
+      <option name="name" value="libs-snapshot" />
+      <option name="url" value="https://iddink.jfrog.io/artifactory/libs-snapshot" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="libs-release" />
+      <option name="url" value="https://iddink.jfrog.io/artifactory/libs-release" />
       <option name="id" value="Apache Nexus" />
       <option name="name" value="Apache Nexus" />
       <option name="url" value="https://repo.topicusonderwijs.nl/artifactory/maven/" />
@@ -20,6 +28,11 @@
       <option name="id" value="jboss.community" />
       <option name="name" value="JBoss Community repository" />
       <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="Apache Nexus" />
+      <option name="name" value="Apache Nexus" />
+      <option name="url" value="https://repository.apache.org/content/repositories/snapshots/" />
     </remote-repository>
   </component>
 </project>
