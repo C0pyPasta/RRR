@@ -12,8 +12,8 @@ export class NewUserComponent {
 
     newUserForm = new FormGroup({
         usernameField: new FormControl('', [Validators.required]),
-        emailField: new FormControl('', [Validators.required]),
-        passwordField: new FormControl('', [Validators.required]),
+        emailField: new FormControl('', [Validators.required, Validators.email]),
+        passwordField: new FormControl('', [Validators.required, Validators.minLength(8)]),
     });
 
     submit() {
