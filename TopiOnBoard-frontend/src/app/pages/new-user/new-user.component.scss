@@ -2,7 +2,8 @@
 @import '/src//shared/styles/tob-styles/mixins.scss';
 
 form {
-    margin-top: 5rem;
+    @include form;
+    height: 20rem;
 }
 
 .center-items {
@@ -20,11 +21,21 @@ form input {
 }
 
 .btn {
-    margin-top: .5rem;
+    margin-top: 1rem;
+    width: 100%;
 
     @include topicus-button;
 }
 
 .btn:active {
     @include button-click;
+}
+
+a {
+    @include aTag;
+    top: .6rem;
+}
+
+a:hover {
+    text-decoration: underline;
 }

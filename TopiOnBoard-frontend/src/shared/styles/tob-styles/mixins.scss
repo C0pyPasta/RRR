@@ -1,3 +1,13 @@
+// FORMS
+
+@mixin form {
+    margin-top: 10rem;
+    border: 1px solid black;
+    border-radius: 5%;
+    height: 17rem;
+    padding: 1rem;
+}
+
 @mixin form-labels {
     font-size: .9rem;
     position: relative;
@@ -5,6 +15,8 @@
     top: .7rem;
     background-color: white;
 }
+
+// BUTTONS
 
 @mixin button-click {
     position: relative;
@@ -22,4 +34,12 @@
         color: rgb(52, 52, 52);
         background-color: $topicus-yellow-shade;
     }
+}
+
+// A TAG
+@mixin aTag {
+    position: relative;
+    top: 1rem;
+    font-size: .8rem;
+    color: black;
 }

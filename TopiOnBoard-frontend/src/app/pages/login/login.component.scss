@@ -1,33 +1,21 @@
 @import '/src/shared/styles/tob-styles/all_colors' ;
 @import '/src/shared/styles/tob-styles/mixins.scss';
 
-h1 {
+h4 {
     position: relative;
-    left: 4rem;
-    top: 1rem;
-    font-size: 5rem;
+    top: 11.2rem;
+    font-size:2rem;
     font-family:'Times New Roman', Times, serif;
     color: $topicus-yellow;
-    
-}
-
-img {
-    width: 20rem;
-    position: absolute;
-    top: 5rem;
-    right: 16rem;
-    z-index: -1;
-    filter: blur(3px);
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: .5rem;
+    user-select: none;
 }
 
 form {
-    margin-top: 1rem;
-}
-
-.center-items {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include form;
 }
 
 form label {
@@ -38,8 +26,15 @@ form input {
     width: 20rem;
 }
 
+.center-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .btn {
-    margin-top: .5rem;
+    margin-top: 1rem;
+    width: 100%;
 
     @include topicus-button;
 }
@@ -51,4 +46,16 @@ form input {
 
 .btn:active, .new-user-button:active {
     @include button-click;
+}
+
+a {
+    @include aTag;
+}
+
+.new-user {
+    float: right;
+}
+
+a:hover, .new-user:hover {
+    text-decoration: underline;
 }
