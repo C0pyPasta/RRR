@@ -1,7 +1,61 @@
-@import '/src/shared/styles/all_colors' ;
+@import '/src/shared/styles/tob-styles/all_colors' ;
+@import '/src/shared/styles/tob-styles/mixins.scss';
+
+h4 {
+    position: relative;
+    top: 11.2rem;
+    font-size:2rem;
+    font-family:'Times New Roman', Times, serif;
+    color: $topicus-yellow;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: .5rem;
+    user-select: none;
+}
+
+form {
+    @include form;
+}
+
+form label {
+    @include form-labels
+}
+
+form input {
+    width: 20rem;
+}
+
+.center-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .btn {
-    &--topiyellow {
-        background-color: $topicus-yellow;
-    }
+    margin-top: 1rem;
+    width: 100%;
+
+    @include topicus-button;
+}
+
+.new-user-button {
+    position: relative;
+    left: -5.7rem;
+}
+
+.btn:active, .new-user-button:active {
+    @include button-click;
+}
+
+a {
+    @include aTag;
+}
+
+.new-user {
+    float: right;
+}
+
+a:hover, .new-user:hover {
+    text-decoration: underline;
 }

@@ -3,7 +3,7 @@ import { FormControl, FormGroup, Validators } from "@angular/forms";
 import { HttpLogInService } from "./service/http-login.service";
 
 @Component({
-    selector: 'tob-log-in',
+    selector: 'log-in',
     templateUrl: './login.component.html',
     styleUrls: ['./login.component.scss']
 })
@@ -16,6 +16,9 @@ export class LogInComponent {
     });
 
     submit() {
-        this.service.login();
+        this.service.login({
+            username: this.inlogForm.value.usernameField,
+            password: this.inlogForm.value.passwordField
+        }).subscribe();
     }
 }

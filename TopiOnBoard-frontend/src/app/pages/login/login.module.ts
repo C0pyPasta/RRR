@@ -9,7 +9,8 @@ import { FtFormFieldModule } from '@fortytwo/ui/forms/form-field';
 import { FtButtonModule } from "@fortytwo/ui";
 
 export const logInRoutes: Routes = [
-    { path: '', component: LogInComponent }
+    { path: '', component: LogInComponent },
+    { path: 'home', title: 'Topi-OnBoard Homepagina', loadChildren: () => import('../home/homepage.module').then(m => m.HomePageModule) },
 ];
 
 @NgModule({

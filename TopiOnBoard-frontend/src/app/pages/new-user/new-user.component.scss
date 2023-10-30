@@ -1,0 +1,41 @@
+@import '/src/shared/styles/tob-styles/all_colors' ;
+@import '/src//shared/styles/tob-styles/mixins.scss';
+
+form {
+    @include form;
+    height: 20rem;
+}
+
+.center-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    @include form-labels;
+}
+
+form input {
+    width: 20rem;
+}
+
+.btn {
+    margin-top: 1rem;
+    width: 100%;
+
+    @include topicus-button;
+}
+
+.btn:active {
+    @include button-click;
+}
+
+a {
+    @include aTag;
+    top: .6rem;
+}
+
+a:hover {
+    text-decoration: underline;
+}

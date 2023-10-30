@@ -1,0 +1,12 @@
+{
+	"production": false,
+	"backend": "http://localhost:8080",
+	"frontend": "http://localhost:4200",
+	"auth": {
+		"clientId": "",
+		"issuer": "",
+		"keyhubUrl": "",
+		"requireHTTPS": false,
+		"resource": "http://localhost:8080"
+	}
+}

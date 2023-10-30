@@ -1,10 +1,14 @@
 <div class="container">
     <div class="center-items">
-        <h4>Topicus-OnBoard</h4>
-        <form [formGroup]="inlogForm" (ngSubmit)="submit()">
+        <form [formGroup]="newUserForm" (ngSubmit)="submit()">
             <ft-formfield>
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" formControlName="usernameField">
+            </ft-formfield>
+    
+            <ft-formfield>
+                <label for="email">E-Mail:</label>
+                <input type="text" id="email" name="email" formControlName="emailField">
             </ft-formfield>
     
             <ft-formfield>
@@ -12,12 +16,8 @@
                 <input type="password" id="pass" name="password" formControlName="passwordField">
             </ft-formfield>
     
-            <button ft-button class="btn--topiyellow" [disabled]="!inlogForm.valid">Inloggen</button>
-
-            <div class="links">
-                <a >Wachtwoord Vergeten</a>
-                <a class="new-user" routerLink="/new-user">Add New User</a>
-            </div>
+            <button ft-button class="btn--topiyellow" [disabled]="!newUserForm.valid">Add</button>
+            <a routerLink="/login">Terug</a>
         </form>
     </div>
 </div>

@@ -1,7 +1,7 @@
 import { Component } from "@angular/core";
 
 @Component({
-    selector: 'tob-homepage',
+    selector: 'homepage',
     templateUrl: './homepage.component.html',
     styleUrls: ['./homepage.component.scss']
 })
