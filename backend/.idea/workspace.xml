@@ -5,27 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="764ca494-d59c-478e-81a0-e3e2f74dc509" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rudi/config/CorsFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../WicketFrontend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WicketFrontend/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WicketFrontend/src/main/java/com/rudi/WicketApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WicketFrontend/src/main/java/com/rudi/backend/WicketApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WicketFrontend/src/main/java/com/rudi/dao/AbstractDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WicketFrontend/src/main/java/com/rudi/dao/UserDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WicketFrontend/src/main/java/com/rudi/entities/AbstractEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WicketFrontend/src/main/java/com/rudi/entities/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WicketFrontend/src/main/java/com/rudi/pages/HomePage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WicketFrontend/src/main/java/com/rudi/pages/HomePage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WicketFrontend/src/main/java/com/rudi/pages/LoginPage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WicketFrontend/src/main/java/com/rudi/pages/LoginPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WicketFrontend/src/main/java/com/rudi/pages/NewUserPage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WicketFrontend/src/main/java/com/rudi/pages/NewUserPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WicketFrontend/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WicketFrontend/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WicketFrontend/src/test/java/com/rudi/TestHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WicketFrontend/src/test/java/com/rudi/TestHomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WicketFrontend/target/generated-sources/annotations/com/rudi/entities/AbstractEntity_.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WicketFrontend/target/generated-sources/annotations/com/rudi/entities/User_.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -35,6 +29,9 @@
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2XLnJBD7wI6IRI6QN4PJWvnHm41" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
@@ -72,7 +69,7 @@
       <workItem from="1698417154664" duration="13000" />
       <workItem from="1698417176445" duration="732000" />
       <workItem from="1699610033748" duration="396000" />
-      <workItem from="1699610944645" duration="704000" />
+      <workItem from="1699610944645" duration="1902000" />
     </task>
     <servers />
   </component>
