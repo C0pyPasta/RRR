@@ -1,6 +1,18 @@
 @import '/src/shared/styles/tob-styles/all_colors' ;
 @import '/src//shared/styles/tob-styles/mixins.scss';
 
+h4 {
+    position: relative;
+    top: 11.2rem;
+    font-size:2rem;
+    font-family:'Times New Roman', Times, serif;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: .5rem;
+    user-select: none;
+}
+
 form {
     @include form;
     height: 20rem;
