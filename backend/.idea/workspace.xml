@@ -6,9 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="764ca494-d59c-478e-81a0-e3e2f74dc509" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../WicketFrontend/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WicketFrontend/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WicketFrontend/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WicketFrontend/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WicketFrontend/.idea/sonarlint/issuestore/3/4/34755ae7316b7deb36820e3f51256a71afd15cb3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WicketFrontend/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../WicketFrontend/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WicketFrontend/.idea/sonarlint/securityhotspotstore/3/4/34755ae7316b7deb36820e3f51256a71afd15cb3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WicketFrontend/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../WicketFrontend/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../WicketFrontend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WicketFrontend/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WicketFrontend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WicketFrontend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WicketFrontend/src/main/java/com/rudi/WicketApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WicketFrontend/src/main/java/com/rudi/WicketApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WicketFrontend/target/classes/com/rudi/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/../WicketFrontend/target/classes/com/rudi/HomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WicketFrontend/target/classes/com/rudi/WicketApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../WicketFrontend/target/classes/com/rudi/WicketApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WicketFrontend/target/test-classes/com/rudi/Start.class" beforeDir="false" afterPath="$PROJECT_DIR$/../WicketFrontend/target/test-classes/com/rudi/Start.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WicketFrontend/target/test-classes/com/rudi/TestHomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/../WicketFrontend/target/test-classes/com/rudi/TestHomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,20 +35,20 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "roy",
-    "last_opened_file_path": "/home/roger/work/RRR/backend/pom.xml",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;roy&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/roger/work/RRR/backend/pom.xml&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Backend" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.rudi.Main" />
@@ -59,6 +68,8 @@
       <updated>1698417153743</updated>
       <workItem from="1698417154664" duration="13000" />
       <workItem from="1698417176445" duration="732000" />
+      <workItem from="1699610033748" duration="396000" />
+      <workItem from="1699610944645" duration="310000" />
     </task>
     <servers />
   </component>
