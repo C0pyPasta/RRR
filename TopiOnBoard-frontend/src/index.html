@@ -10,4 +10,22 @@
 <body>
   <app-root></app-root>
 </body>
+<!-- <script src="navItemsAnim.js" type="javascript"></script> -->
+<script>
+    let indicator = document.querySelector('#indicator');
+    let items = document.querySelectorAll('nav a');
+
+function marker(e) {
+    indicator.style.left = e.offsetLeft+"px";
+    indicator.style.width = e.offsetWidth+"px";
+}
+
+items.forEach(link => {
+    link.addEventListener('click', (e) => {
+        marker(e.target);
+    })
+})
+
+document.write(5 + 6);
+</script>
 </html>
