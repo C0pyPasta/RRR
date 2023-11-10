@@ -1,5 +1,6 @@
 package com.rudi;
 
+import com.rudi.pages.LoginPage;
 import org.apache.wicket.csp.CSPDirective;
 import org.apache.wicket.csp.CSPDirectiveSrcValue;
 import org.apache.wicket.markup.html.WebPage;
@@ -19,7 +20,7 @@ public class WicketApplication extends WebApplication
 	@Override
 	public Class<? extends WebPage> getHomePage()
 	{
-		return HomePage.class;
+		return LoginPage.class;
 	}
 
 	/**
