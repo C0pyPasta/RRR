@@ -1,5 +1,6 @@
 package com.rudi;
 
+import com.rudi.backend.WicketApplication;
 import org.apache.wicket.util.tester.WicketTester;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
