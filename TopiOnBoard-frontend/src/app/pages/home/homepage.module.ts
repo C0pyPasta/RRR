@@ -4,12 +4,8 @@ import { HomePageComponent } from './homepage.component';
 import { FtButtonModule } from '@fortytwo/ui';
 import { FtIconModule } from '@fortytwo/ui/components/icons';
 import { RouterModule, Routes } from '@angular/router';
-import { ProfileComponent } from '../profile/profile.component';
 
-export const HomeRoutes: Routes = [
-  { path: '', component: HomePageComponent },
-  { path: 'profile', component: ProfileComponent },
-];
+export const HomeRoutes: Routes = [{ path: '', component: HomePageComponent }];
 
 @NgModule({
   declarations: [HomePageComponent],

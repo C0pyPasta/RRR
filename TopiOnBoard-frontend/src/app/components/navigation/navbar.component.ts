@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { AuthService } from 'src/app/auth.service';
 
 @Component({
   selector: 'navbar',
@@ -6,17 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavBarComponent {
-  indicator = document.querySelector('#indicator');
-  items = document.querySelectorAll('nav a');
+  constructor(private authService: AuthService) {}
 
-  marker(e) {
-    this.indicator!.style.left = e.offsetLeft+"px";
-    this.indicator.style.width = e.offsetWidth+"px";
+  logout() {
+    this.authService.logout();
   }
-
-items.forEach(link => {
-    link.addEventListener('click', (e) => {
-        marker(e.target);
-    })
-})
 }

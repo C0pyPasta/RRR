@@ -12,7 +12,7 @@
                 <input type="password" id="pass" name="password" formControlName="passwordField">
             </ft-formfield>
     
-            <button ft-button class="btn--topiyellow" [disabled]="!inlogForm.valid">Inloggen</button>
+            <button ft-button class="btn--topiyellow" [disabled]="!inlogForm.valid" (click)="Inloggen()">Inloggen</button>
 
             <div class="links">
                 <a >Wachtwoord Vergeten</a>

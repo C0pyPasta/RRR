@@ -1,10 +1,9 @@
 <header>
     <img src="assets/logo/topicus-logo-03-rgb-dark.png" alt="topicus logo" />
-    <nav>
+    <nav class="navigation">
         <div id="indicator"></div>
-        <a href="#">Home</a>
-        <a href="#">Profile</a>
-        <a href="#">Item</a>
-        <a href="#">Item</a>
+        <a class="nav-a" routerLink="/home" routerLinkActive="active">Home</a>
+        <a class="nav-a" routerLink="/profile" routerLinkActive="active">Profile</a>
+        <a class="nav-a" routerLink="/login"  (click)="logout()">Logout</a>
     </nav>
 </header>
